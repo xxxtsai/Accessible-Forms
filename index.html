@@ -57,19 +57,26 @@
 
             <!-- Preferred Method of Contact -->
             <fieldset>
-                <legend>Preferred Method of Contact <span class="required">*</span></legend>
-                <div>
-                    <input type="radio" id="contact-email" name="preferred_contact" value="email" required>
-                    <label for="contact-email">Email</label>
-                </div>
-                <div>
-                    <input type="radio" id="contact-phone" name="preferred_contact" value="phone">
-                    <label for="contact-phone">Phone</label>
-                </div>
+                <legend>Preferred Method of Contact<span class="required">*</span></legend>
+                <label for="PreferredEmail">
+                    <span class="radio-input">
+                        <input type="radio" name="preferred_contact" id="contact-email" required checked>
+                        <span class="radio-control"></span>
+                    </span>
+                    <span class="radio-label">Email</span>
+                </label>
+                <label for="PreferredfPhone">
+                    <span class="radio-input">
+                        <input type="radio" name="preferred_contact" id="contact-phone">
+                        <span class="radio-control"></span>
+                    </span>
+                    <span class="radio-label">Phone</span>
+                </label>
             </fieldset>
+            
 
             <!-- State of Residence -->
-            <div>
+            <div id="selects">
                 <label for="state">State of Residence: <span aria-hidden="true" class="required">*</span></label>
                 <select id="state" name="state" required aria-required="true">
                     <option value="">Select a state</option>
